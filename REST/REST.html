@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API Actions</title>
+    <style>
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSONPlaceholder API Actions</h1>
+    <button onclick="getAllPosts()">Get All Posts</button>
+    <button onclick="getPostById()">Get Post with ID 10</button>
+    <button onclick="createNewPost()">Create New Post</button>
+    <button onclick="replacePostById()">Replace Post with ID 12</button>
+    <button onclick="updatePostTitle()">Update Title of Post ID 12</button>
+    <button onclick="deletePostById()">Delete Post with ID 12</button>
+
+    <div id="resultGetAllPosts" class="result"></div>
+    <div id="resultGetPostById" class="result"></div>
+    <div id="resultCreateNewPost" class="result"></div>
+    <div id="resultReplacePostById" class="result"></div>
+    <div id="resultUpdatePostTitle" class="result"></div>
+    <div id="resultDeletePostById" class="result"></div>
+
+    <script src="REST.js"></script>
+</body>
+</html>
