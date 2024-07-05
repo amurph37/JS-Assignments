@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 3008;
-const API_KEY = 'daee3548a9msh816a82847071757p1a6329jsnc8585fb2341a'; // Replace with your OpenWeatherMap API key
+const API_KEY = 'daee3548a9msh816a82847071757p1a6329jsnc8585fb2341a';
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
