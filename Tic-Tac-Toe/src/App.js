@@ -16,6 +16,7 @@ function Board({ xIsNext, squares, onPlay }) {
     const nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = 'X';
+
     } else {
       nextSquares[i] = 'O';
     }
@@ -51,6 +52,7 @@ function Board({ xIsNext, squares, onPlay }) {
   </>
   ); 
 }
+
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
